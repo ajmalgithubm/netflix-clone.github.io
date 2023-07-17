@@ -1,3 +1,6 @@
 .posterContent::-webkit-scrollbar {
     display: none;
 }
+.posterImg{
+ width: '25vw';
+}

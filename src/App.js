@@ -12,7 +12,7 @@ function App() {
   },[])
   return (
     <div className="App">
-      <NavBar windowWidth={windowWidth}/>
+      {/*<NavBar windowWidth={windowWidth}/>*/}
       <Poster windowWidth={windowWidth}/>
     </div>
   );
