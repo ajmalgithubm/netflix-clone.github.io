@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <NavBar windowWidth={windowWidth}/>
-      <Poster/>
+      <Poster windowWidth={windowWidth}/>
     </div>
   );
 }
