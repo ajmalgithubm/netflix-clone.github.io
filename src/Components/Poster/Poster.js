@@ -2,12 +2,12 @@ import React from 'react'
 import './Poster.css'
 function Poster({windowWidth}) {
   return (
-    <div className=''>
+    <div>
       <div className='p-2 pt-1 pb-1 bg-dark d-flex align-items-center' style={{}}>
         <div className="leftIconBar">
           <svg style={{ width: '2vw', height: '2vw' }} viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path fill="red" d="M11.56 5.56L10.5 4.5 6 9l4.5 4.5 1.06-1.06L8.12 9z"></path></svg>
         </div>
-        <div className='entirePosterContent d-flex flex-column p-1' style={{overflowY:'scroll'}}>
+        <div className='entirePosterContent d-flex flex-column' style={{overflowY:'scroll'}}>
           <div className='posterHeading p-2'>
             <p style={{ color: '#fff', fontFamily: 'Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif', fontWeight: '600', cursor: 'pointer', fontSize: '1.8vw' }}>Popular On Netflix</p>
           </div> {/* Poster Heading is Given */}

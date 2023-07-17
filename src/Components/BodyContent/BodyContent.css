@@ -1,0 +1,17 @@
+.heading{
+    font-weight: 900;
+    word-wrap: break-word;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
+    transition-duration: .75s;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size: 3.4vw;
+}
+.discription{
+    color:#fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
+    transition-duration: .75s;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 1.5vw;
+    width: 100%;
+}
