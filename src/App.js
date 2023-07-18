@@ -15,6 +15,7 @@ function App() {
     <div className="App">
        <NavBar windowWidth={windowWidth}/> 
        <BodyContent windoWidth={windowWidth}/>
+       
       
     </div>
   );

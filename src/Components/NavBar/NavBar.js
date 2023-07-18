@@ -2,7 +2,7 @@ import React from 'react';
 import './NavBar.css';
 function NavBar({windowWidth}) {
     return (
-        <div style={{backgroundColor:'#000'}}>
+        <div style={{backgroundColor:'#000',position:'fixed',right:'0',left:'0',top:'0'}}>
             <div className='d-flex justify-content-between flex-wrap'>
                 <div className='p-2'>
                     <img src={windowWidth > 600 ? "https://wallpaperaccess.com/full/6075689.png" :"https://blog.logomyway.com/wp-content/uploads/2020/08/netflix-logo-2-1.jpg"} className='img img-fluid' width={100} height={100} alt="" />

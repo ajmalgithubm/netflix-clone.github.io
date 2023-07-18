@@ -1,11 +1,20 @@
 import React from 'react'
 import './Poster.css'
-function Poster({windowWidth}) {
+function Poster({windowWidth, isBlur, isBlur2}) {
+  let posterContent = document.getElementsByClassName('posterContent');
+  let moveNext = -50;
+  let handlePrevPost = () => {
+    
+  }
+  const handleNextPost = ()=> {
+    moveNext -=10;
+    posterContent.style.transform =`translateX(${moveNext}%)`;
+  }
   return (
-    <div>
+    <div style={{ filter: isBlur ? 'blur(10px)':isBlur2&&'blur(25px)'}}>
       <div className='p-2 pt-1 pb-1 bg-dark d-flex align-items-center' style={{}}>
         <div className="leftIconBar">
-          <svg style={{ width: '2vw', height: '2vw' }} viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path fill="red" d="M11.56 5.56L10.5 4.5 6 9l4.5 4.5 1.06-1.06L8.12 9z"></path></svg>
+          <svg onClick={() => handlePrevPost()} style={{ width: '2vw', height: '2vw' }} viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path fill="red" d="M11.56 5.56L10.5 4.5 6 9l4.5 4.5 1.06-1.06L8.12 9z"></path></svg>
         </div>
         <div className='entirePosterContent d-flex flex-column' style={{overflowY:'scroll'}}>
           <div className='posterHeading p-2'>
@@ -87,7 +96,7 @@ function Poster({windowWidth}) {
           </div>
         </div>
         <div className="rightIconBar">
-          <svg style={{ width: '2vw', height: '2vw', transform: 'rotate(180deg)' }} viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path fill="red" d="M11.56 5.56L10.5 4.5 6 9l4.5 4.5 1.06-1.06L8.12 9z"></path></svg>
+          <svg onClick={() => handleNextPost()} style={{ width: '2vw', height: '2vw', transform: 'rotate(180deg)' }} viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path fill="red" d="M11.56 5.56L10.5 4.5 6 9l4.5 4.5 1.06-1.06L8.12 9z"></path></svg>
         </div>
       </div>
     </div>
