@@ -23,10 +23,10 @@ function BodyContent({ windowWidth }) {
             <div className="posters">
                 <Poster windowWidth={windowWidth} />
             </div>
-            <div className="posters" style={{ backgroundImage: 'linear-gradient(to bottom,#333, #000000)' }}>
+            <div className="posters" style={{ backgroundImage: 'linear-gradient(to bottom,  #212529, transparent 0)' }}>
                 <Poster windowWidth={windowWidth} isBlur/>
             </div>
-            <div className="posters pb-5" style={{ backgroundImage:'linear-gradient(to bottom, #000000, #000000)'}}>
+            <div className="posters pb-5" style={{ backgroundImage: "linear-gradient(180deg, transparent 0, #181818)"}}>
                 <Poster windowWidth={windowWidth} isBlur2/>
             </div>
         </div>
