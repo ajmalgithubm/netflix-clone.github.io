@@ -15,19 +15,19 @@ function BodyContent({ windowWidth }) {
                 </div>
             </div>
             <div className="posters">
-                <Poster windowWidth={windowWidth} />
+                <Poster windowWidth={windowWidth} item='movie/top_rated' heading ='Top rated'/>
             </div>
             <div className="posters">
-                <Poster windowWidth={windowWidth} />
+                <Poster windowWidth={windowWidth} item='movie/now_playing' heading='Now playing'/>
             </div>
             <div className="posters">
-                <Poster windowWidth={windowWidth} />
+                <Poster windowWidth={windowWidth} item='discover/tv' heading='Up coming'/>
             </div>
             <div className="posters" style={{ backgroundImage: 'linear-gradient(to bottom,  #212529, transparent 0)' }}>
-                <Poster windowWidth={windowWidth} isBlur/>
+                <Poster windowWidth={windowWidth} isBlur item='discover/movie' heading='tv series'/>
             </div>
             <div className="posters pb-5" style={{ backgroundImage: "linear-gradient(180deg, transparent 0, #181818)"}}>
-                <Poster windowWidth={windowWidth} isBlur2/>
+                <Poster windowWidth={windowWidth} isBlur2 item='movie/popular' heading='movie'/>
             </div>
         </div>
     )
